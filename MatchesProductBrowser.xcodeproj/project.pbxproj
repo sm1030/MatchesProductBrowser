@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5155688729008D5C003192D3 /* HomeFlowCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5155688629008D5C003192D3 /* HomeFlowCoordinatorTests.swift */; };
+		5155688C2900977F003192D3 /* ProductDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5155688B2900977F003192D3 /* ProductDetailsViewModelTests.swift */; };
+		5155688E29009BFB003192D3 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5155688D29009BFB003192D3 /* HomeViewControllerTests.swift */; };
 		515607AE28FABE0900FCA51D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515607AD28FABE0900FCA51D /* AppDelegate.swift */; };
 		515607B028FABE0900FCA51D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515607AF28FABE0900FCA51D /* SceneDelegate.swift */; };
 		515607B728FABE0A00FCA51D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515607B628FABE0A00FCA51D /* Assets.xcassets */; };
@@ -73,6 +76,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5155688629008D5C003192D3 /* HomeFlowCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowCoordinatorTests.swift; sourceTree = "<group>"; };
+		5155688B2900977F003192D3 /* ProductDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		5155688D29009BFB003192D3 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		515607AA28FABE0900FCA51D /* MatchesProductBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchesProductBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		515607AD28FABE0900FCA51D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		515607AF28FABE0900FCA51D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +156,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51556885290089E0003192D3 /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				5155688629008D5C003192D3 /* HomeFlowCoordinatorTests.swift */,
+			);
+			path = FlowCoordinators;
+			sourceTree = "<group>";
+		};
+		51556888290096E5003192D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51556889290096FF003192D3 /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51556889290096FF003192D3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5155688D29009BFB003192D3 /* HomeViewControllerTests.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5155688A29009738003192D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5155688B2900977F003192D3 /* ProductDetailsViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		515607A128FABE0900FCA51D = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +227,9 @@
 			isa = PBXGroup;
 			children = (
 				5156080028FAF58000FCA51D /* Model */,
+				51556888290096E5003192D3 /* View */,
+				5155688A29009738003192D3 /* ViewModel */,
+				51556885290089E0003192D3 /* FlowCoordinators */,
 				5156085B28FE9E5500FCA51D /* Core */,
 			);
 			path = MatchesProductBrowserTests;
@@ -627,7 +668,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5155688729008D5C003192D3 /* HomeFlowCoordinatorTests.swift in Sources */,
 				5156082828FB52A200FCA51D /* ApiRequestTests.swift in Sources */,
+				5155688E29009BFB003192D3 /* HomeViewControllerTests.swift in Sources */,
 				5156082F28FC0E7800FCA51D /* ProductServiceTests.swift in Sources */,
 				5156080728FAF60E00FCA51D /* RemoteDataProviderTests.swift in Sources */,
 				5156083D28FC83D100FCA51D /* CurrencyServiceTests.swift in Sources */,
@@ -637,6 +680,7 @@
 				5156080528FAF5E900FCA51D /* LocalDataProviderTests.swift in Sources */,
 				5156082A28FBFFB400FCA51D /* APIDecodableResponseTest.swift in Sources */,
 				5156082D28FC0B4700FCA51D /* ProductsRequestTests.swift in Sources */,
+				5155688C2900977F003192D3 /* ProductDetailsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
