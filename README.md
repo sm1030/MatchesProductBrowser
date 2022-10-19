@@ -10,4 +10,9 @@ Very simple DependencyInjection (without new instances factory) provide access t
 
 I have UnitTests that covers all model section
 
+Also I have 1 tests for:
+- FlowCoordinator
+- View Controller
+- ViewModel
+
 UITest uses local mock data and does not go to the Internet.
